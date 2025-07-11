@@ -23,7 +23,7 @@ header {
 }
     
 .cuadro {
-    width: 390px;
+    width: 80%;
     overflow: auto;
     height: 9rem;
     border-radius: 25px;
