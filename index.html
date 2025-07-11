@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velas Sustentables</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <style>
@@ -14,7 +14,6 @@
     <header>
         <h1>Davan Candles</h1>
     </header>
-
     <nav>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
@@ -24,6 +23,15 @@
     </nav>
 
     <main>
+        <div class="cuadro">
+        <h4>🛒</h4>
+  
+        <div class="total">
+        <div id="carrito"></div>  
+      <h3>🛒Total: $<span id="total">0.00</span></h3>
+  
+  </div>
+</div>
         <section id="inicio">
             <h2>Bienvenidos</h2>
             <h3>Descubre nuestras velas hechas a mano con materiales reciclados y sustentables. Cada vela cuenta una historia única de compromiso con el planeta.</h3>            
@@ -31,12 +39,7 @@
         </section>
 
         <section id="productos">            
-            <h4>Materiales reciclados</h4>
-            <img src="imagenes/2.png" alt="Materiales reciclados" width="200"> 
-            <h4>Cera de soja</h4>
-            <img src="imagenes/3.png" alt="Cera de soja" width="200">
-            <h4>Estilo único</h4>
-            <img src="imagenes/4.png" alt="Estilo único" width="200">
+<div id="productos" class="productos"></div>
         </section>
 
         <section id="contacto">
@@ -54,10 +57,22 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
+          <div id="miAlerta" class="alerta">
+    <div class="alerta-contenido">
+      <span id="iconoAlerta" class="icono"></span>
+      <div>
+        <strong id="tituloAlerta"></strong>
+        <p id="mensajeAlerta"></p>
+      </div>
+      <button onclick="cerrarAlerta()" class="cerrar">X</button>
+    </div>
+  </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Velas Sustentables Davan. Todos los derechos reservados.</p>
     </footer>
+    
+    <script src="js/carrito.js"></script>
 </body>
 </html>

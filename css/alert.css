@@ -1,0 +1,86 @@
+/* Estilo general de la alerta */
+.alerta {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f44336;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  display: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+  width: 350px;
+}
+
+.alerta .alerta-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icono {
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.cerrar {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cerrar:hover {
+  color: #ddd;
+}
+
+/* Colores y iconos para cada tipo de alerta */
+
+/* Estilo INFO */
+.alerta.info {
+  background-color: #2196f3;
+}
+
+.alerta.info .icono {
+  color: #2196f3;
+}
+
+.alerta.info #iconoAlerta {
+  content: '\f05a'; /* Font Awesome Info icon */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+
+/* Estilo WARNING */
+.alerta.warning {
+  background-color: #ff9800;
+}
+
+.alerta.warning .icono {
+  color: #ff9800;
+}
+
+.alerta.warning #iconoAlerta {
+  content: '\f071'; /* Font Awesome Warning icon */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+
+/* Estilo ERROR */
+.alerta.error {
+  background-color: #f44336;
+}
+
+.alerta.error .icono {
+  color: #f44336;
+}
+
+.alerta.error #iconoAlerta {
+  content: '\f12a'; /* Font Awesome Error icon */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
