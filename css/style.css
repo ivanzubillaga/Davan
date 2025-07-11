@@ -232,3 +232,9 @@ button:hover {
   bottom: 0px;  
 
 }
+.checkout{
+        border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
