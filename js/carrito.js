@@ -2,7 +2,6 @@ const API_URL = 'https://fakestoreapi.com/products';
 const productosDiv = document.getElementById('productos');
 const carritoDiv = document.getElementById('carrito');
 const totalSpan = document.getElementById('total');
-
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
 async function obtenerProductos() {
@@ -108,3 +107,29 @@ function cerrarAlerta() {
   var alerta = document.getElementById("miAlerta");
   alerta.style.display = "none";
 }
+
+document.getElementById("btncarrito_full").addEventListener("click", function() {
+  const paso2 = document.getElementById('paso2');
+  const btn_next = document.getElementById('btncarrito_full');
+  const paso1 = document.getElementById('paso1');
+  paso = this.innerText
+
+  if (paso == 'Entrega') {
+  
+  paso1.hidden = true;
+  paso2.hidden = false;
+  btn_next.innerHTML='Confirmar'  
+    
+  }if (paso == 'Confirmar') {
+    mostrarAlerta('Confirmado','Pedido confirmado!',1)
+    paso2.innerText='Pedido confirmado, gracias por su compra'
+  btn_next.innerHTML='inicio'  
+  }
+  if (paso == 'inicio') {    
+    window.location.href = "index.html";
+  }
+
+});
+
+  
+  

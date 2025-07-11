@@ -216,3 +216,19 @@ button:hover {
     rotate: +180deg;
     transition: 0.3s ease-in-out;  
 }
+.cuadro_full{
+        border-radius: 25px;
+    background: #ffffff;
+    border: #ffffff 11px solid;
+    padding: 27px;
+}
+#btncarrito_full{
+  padding: 6px;
+  width: 150px;
+  background-color: #5a0099;
+  color: white;
+  border: none;
+  cursor: pointer;
+  bottom: 0px;  
+
+}

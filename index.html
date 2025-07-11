@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Velas Sustentables</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
-</head>
-<style>
-    
-</style>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style></style>
+  <body>
     <header>
-        <h1>Davan Candles</h1>
+      <h1>Davan Candles</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
 
     <main>
-        <div class="cuadro">
+      <div class="cuadro">
         <h4>🛒</h4>
-        
-        <div id="carrito"></div>  
-      <h3>🛒Total: $<span id="total">0.00</span></h3>
-    
-</div>
-        <section id="inicio">
-            <h2>Bienvenidos</h2>
-            <h3>Descubre nuestras velas hechas a mano con materiales reciclados y sustentables. Cada vela cuenta una historia única de compromiso con el planeta.</h3>            
-            <img class="imagenGrande" src="imagenes/1.png" alt="Davan"> 
-        </section>
 
-        <section id="productos">            
-<div id="productos" class="productos"></div>
-        </section>
-
-        <section id="contacto">
-            <h2>Contáctanos</h2>
-            <form  action="https://formspree.io/f/mqaqvvpd" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-          <div id="miAlerta" class="alerta">
-    <div class="alerta-contenido">
-      <span id="iconoAlerta" class="icono"></span>
-      <div>
-        <strong id="tituloAlerta"></strong>
-        <p id="mensajeAlerta"></p>
+        <div id="carrito"></div>
+        <h3>🛒Total: $<span id="total">0.00</span></h3>
       </div>
-      <button onclick="cerrarAlerta()" class="cerrar">X</button>
-    </div>
-  </div>
+      <section id="inicio">
+        <h2>Bienvenidos</h2>
+        <h3>
+          Descubre nuestras velas hechas a mano con materiales reciclados y
+          sustentables. Cada vela cuenta una historia única de compromiso con el
+          planeta.
+        </h3>
+        <img class="imagenGrande" src="imagenes/1.png" alt="Davan" />
+      </section>
+
+      <section id="productos">
+        <div id="lista-productos" class="productos"></div>
+      </section>
+
+      <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form action="https://formspree.io/f/mqaqvvpd" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      <div id="miAlerta" class="alerta">
+        <div class="alerta-contenido">
+          <span id="iconoAlerta" class="icono"></span>
+          <div>
+            <strong id="tituloAlerta"></strong>
+            <p id="mensajeAlerta"></p>
+          </div>
+          <button onclick="cerrarAlerta()" class="cerrar">X</button>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Velas Sustentables Davan. Todos los derechos reservados.</p>
+      <p>
+        &copy; 2025 Velas Sustentables Davan. Todos los derechos reservados.
+      </p>
     </footer>
-    
+
     <script src="js/carrito.js"></script>
-</body>
+  </body>
 </html>

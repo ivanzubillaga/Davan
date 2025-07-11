@@ -1,15 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="carrito"></div> 
-            <section id="productos">            
-<div id="productos" class="productos"></div>
-        </section>
-</body>
-<script src="/js/carrito.js"></script>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velas Sustentables</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style></style>
+  <body>
+    <header>
+      <h1>Davan Candles</h1>
+    </header>
+
+    <main>
+      <div class="cuadro_full">
+        <div id="paso1">
+          <h4>🛒</h4>
+          <div id="carrito"></div>
+          <h3>🛒Total: $<span id="total">0.00</span></h3>
+        </div>
+
+        <div id="paso2">
+          <div class="cuadro_full">
+            <p>Dirección</p>
+            <input type="text" id="direccion" />
+          </div>
+        </div>
+      </div>
+      <button id="btncarrito_full">Entrega</button>
+    </main>
+
+    <div id="miAlerta" class="alerta">
+      <div class="alerta-contenido">
+        <span id="iconoAlerta" class="icono"></span>
+        <div>
+          <strong id="tituloAlerta"></strong>
+          <p id="mensajeAlerta"></p>
+        </div>
+        <button onclick="cerrarAlerta()" class="cerrar">X</button>
+      </div>
+    </div>
+
+    <script src="/js/carrito.js"></script>
+    <script>
+      const paso2 = document.getElementById('paso2');
+      paso2.hidden = true
+</script>
+  </body>
 </html>
